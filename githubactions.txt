@@ -1,5 +1,9 @@
-deploying application in k8s using github actions:-
-
-checkout the code from developer branch to new branch eksfargateprod
-create the dockerfile
-
+deploying into k8s cluster using git actions
+take the code from developer branch
+checkout to new branch eksfargateprod
+create a dockerfile to build image
+modified the code for run the mage
+add aws access key and secret key into github actions to access aws user from github
+created a folde .github/workflows
+created build.yaml,deploy.yaml,ingress.yaml,service.yaml and kustemization.yaml
+apllied cnditions for dev and prod repos, whenever any changes done in a particular repository only that particular deployment should be done
