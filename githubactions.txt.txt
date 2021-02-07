@@ -1,0 +1,5 @@
+deploying application in k8s using github actions:-
+
+checkout the code from developer branch to new branch eksfargateprod
+create the dockerfile
+
