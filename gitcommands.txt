@@ -1,0 +1,6 @@
+git init :- initialize the git and creates a .git folder in local
+git remot add origin <git url of repo> :- to add git repo
+git remote -v
+git add . :- to add all file in current working directory
+git commit -m "" :- to commit the added files
+git push origin master :- to push the file into githhub
