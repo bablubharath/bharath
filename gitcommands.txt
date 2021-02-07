@@ -4,3 +4,6 @@ git remote -v
 git add . :- to add all file in current working directory
 git commit -m "" :- to commit the added files
 git push origin master :- to push the file into githhub
+
+
+aws eks access from windows:- https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html
