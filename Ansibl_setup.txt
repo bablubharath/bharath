@@ -1,0 +1,17 @@
+Ansible:-
+==========
+Launch 5 ec2 machines t2.medium 1 master and 4 nodes
+Login to one machine and name it as master and generate ssh key using command "ssh-keygen"
+copy the public key use command "cat id_rsa.pub"and copy the content in the file
+paste the public key in all worker nodes as root user path: "/root/.ssh/authorised_keys" file manually or used command "ssh copy id"
+To check the communication between master and slave login to master and do ssh <slave private ip> as root
+Install ansible in mster by enabling repo to enable repo use command "sed -i 's/wnabled=o/enabled=1/g' /etc/yum.repos.d/redhat-rhui.repo (it is for redhat linux)
+Install apache on two servers using ansible module yum
+{ansible important files:-
+/etc/ansible
+/etc/ansible/ansible.cfg
+/etc/ansible/hosts---inventory (static/dynamic)}
+servers information storing file = inentory or CMDB (configuration management data base)
+what is dymanic nonventory and what is static inventory , what is CMDB
+add the all worker  ode private ips and add into "/etc/ansible/hosts" under a group [group name]
+To check remote servers in ansible use command: "ansible -m ping" <group name created in the "/etc/ansible/hosts">
